@@ -46,7 +46,7 @@ pipeline {
 
                             repository: 'repository/maven-nexus-sonar-qube',
 
-                            credentialsId: 'NEXUS_CRED',
+                            credentialsId: 'nexus-credentails',
 
                             artifacts: [
 
