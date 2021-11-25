@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'MAVEN'
+        maven 'maven3'
     }
 
     stages {
@@ -38,13 +38,13 @@ pipeline {
                             
                             protocol: 'http',
 
-                            nexusUrl: '52.66.46.76:8081/',
+                            nexusUrl: '3.239.197.163:8081/',
 
                             groupId: 'pom.com.mycompany.app',
 
                             version: 'pom.1.0-SNAPSHOT',
 
-                            repository: 'repository/maven-central-repository',
+                            repository: 'repository/maven-nexus-sonar-qube',
 
                             credentialsId: 'NEXUS_CRED',
 
